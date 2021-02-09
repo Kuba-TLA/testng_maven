@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Main Test Suite" verbose="5">
+    <groups>
+        <define name="smoke"/>
+        <define name="regression"/>
+    </groups>
+
+    <parameter name="OS" value="Windows"/>
+    <parameter name="browser" value="Chrome"/>
+
+    <test name="Extent Report Test">
+        <classes>
+            <class name="test.HomePageTest"/>
+        </classes>
+    </test>
+</suite>
